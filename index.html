@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="form-wrapper">
+                <form class="age-form">
+                    <div class="top-input-section">
+                        <div class="input-group">
+                            <label for="day">DAY</label>
+                            <input type="number" name="day" id="day" min="1" max="31" placeholder="DD" required />
+                            <span id="error-day" style="display: none;">Must be valid day</span>
+                            <span id="error-req-day" style="display: none;">This field is required</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="month">MONTH</label>
+                            <input type="number" name="month" id="month" min="1" max="12" placeholder="MM" required />
+                            <span id="error-month" style="display: none;">Must be valid month</span>
+                            <span id="error-req-month" style="display: none;">This field is required</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="year">YEAR</label>
+                            <input type="number" name="year" id="year" min="1960" max="2023" minlength="4"
+                                placeholder="YYYY" required />
+                            <span id="error-year" style="display: none;">Must be valid year</span>
+                            <span id="error-req-year" style="display: none;">This field is required</span>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="form-button">
+                        <button type="button" id='submit'><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44"
+                                viewBox="0 0 46 44">
+                                <g fill="none" stroke="#FFF" stroke-width="2">
+                                    <path
+                                        d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+                                </g>
+                            </svg></button>
+                    </div>
+                </form>
+                <div class="result-section">
+                    <strong><span id="years"></span> years</strong>
+                    <strong><span id="months"></span> months</strong>
+                    <strong><span id="days"></span> days</strong>
+                </div>
+            </div>
+        </div>
+        <div class="attribution" style="margin-top: 1rem;">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/SajanMG">Sajan Gurung</a>.
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
